@@ -1,0 +1,615 @@
+.fflag {
+  background-repeat: no-repeat;
+  background-size: 100% 49494%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: content-box;
+}
+.fflag-CH,
+.fflag-NP {
+  box-shadow: none !important;
+}
+.fflag-DZ {
+  background-position: center 0.2287%;
+}
+.fflag-AO {
+  background-position: center 0.4524%;
+}
+.fflag-BW {
+  background-position: center 0.6721%;
+}
+.fflag-BI {
+  background-position: center 0.8958%;
+}
+.fflag-CV {
+  background-position: center 1.1162%;
+}
+.fflag-CD {
+  background-position: left 1.3379%;
+}
+.fflag-DJ {
+  background-position: left 1.5589%;
+}
+.fflag-EG {
+  background-position: center 1.7805%;
+}
+.fflag-ER {
+  background-position: left 2.0047%;
+}
+.fflag-ET {
+  background-position: center 2.2247%;
+}
+.fflag-GA {
+  background-position: center 2.4467%;
+}
+.fflag-GM {
+  background-position: center 2.6674%;
+}
+.fflag-GH {
+  background-position: center 2.8931%;
+}
+.fflag-GN {
+  background-position: center 3.1125%;
+}
+.fflag-KE {
+  background-position: center 3.3325%;
+}
+.fflag-LS {
+  background-position: center 3.5542%;
+}
+.fflag-LR {
+  background-position: left 3.7759%;
+}
+.fflag-LY {
+  background-position: center 4.0015%;
+}
+.fflag-MG {
+  background-position: center 4.2229%;
+}
+.fflag-MW {
+  background-position: center 4.441%;
+}
+.fflag-MR {
+  background-position: center 4.66663%;
+}
+.fflag-MU {
+  background-position: center 4.8844%;
+}
+.fflag-MA {
+  background-position: center 5.1061%;
+}
+.fflag-MZ {
+  background-position: left 5.3298%;
+}
+.fflag-NA {
+  background-position: left 5.5495%;
+}
+.fflag-NG {
+  background-position: center 5.7712%;
+}
+.fflag-RW {
+  background-position: right 5.994%;
+}
+.fflag-SH {
+  background-position: center 6.2156%;
+}
+.fflag-ST {
+  background-position: center 6.4363%;
+}
+.fflag-SC {
+  background-position: left 6.658%;
+}
+.fflag-SL {
+  background-position: center 6.8805%;
+}
+.fflag-SO {
+  background-position: center 7.1038%;
+}
+.fflag-ZA {
+  background-position: left 7.3231%;
+}
+.fflag-SD {
+  background-position: center 7.5448%;
+}
+.fflag-SR {
+  background-position: center 7.7661%;
+}
+.fflag-SZ {
+  background-position: center 7.98937%;
+}
+.fflag-TN {
+  background-position: center 8.2099%;
+}
+.fflag-UG {
+  background-position: center 8.4316%;
+}
+.fflag-TZ {
+  background-position: center 8.6533%;
+}
+.fflag-YE {
+  background-position: center 8.875%;
+}
+.fflag-ZM {
+  background-position: center 9.0967%;
+}
+.fflag-ZW {
+  background-position: left 9.32237%;
+}
+.fflag-AR {
+  background-position: center 9.5426%;
+}
+.fflag-AW {
+  background-position: left 9.7628%;
+}
+.fflag-BS {
+  background-position: left 9.9845%;
+}
+.fflag-BB {
+  background-position: center 10.2052%;
+}
+.fflag-BZ {
+  background-position: center 10.4269%;
+}
+.fflag-BM {
+  background-position: center 10.6486%;
+}
+.fflag-BO {
+  background-position: center 10.8703%;
+}
+.fflag-BR {
+  background-position: center 11.0945%;
+}
+.fflag-CA {
+  background-position: center 11.3135%;
+}
+.fflag-KY {
+  background-position: center 11.5354%;
+}
+.fflag-CL {
+  background-position: left 11.7593%;
+}
+.fflag-CO {
+  background-position: left 11.9799%;
+}
+.fflag-KM {
+  background-position: center 12.2005%;
+}
+.fflag-CR {
+  background-position: center 12.4222%;
+}
+.fflag-CU {
+  background-position: left 12.644%;
+}
+.fflag-DO {
+  background-position: center 12.8664%;
+}
+.fflag-SV {
+  background-position: center 13.0873%;
+}
+.fflag-FK {
+  background-position: center 13.309%;
+}
+.fflag-GT {
+  background-position: center 13.5307%;
+}
+.fflag-GY {
+  background-position: center 13.7524%;
+}
+.fflag-HT {
+  background-position: center 13.9741%;
+}
+.fflag-HN {
+  background-position: center 14.1958%;
+}
+.fflag-JM {
+  background-position: center 14.4175%;
+}
+.fflag-MX {
+  background-position: center 14.6415%;
+}
+.fflag-NI {
+  background-position: center 14.8609%;
+}
+.fflag-PA {
+  background-position: center 15.0826%;
+}
+.fflag-PY {
+  background-position: center 15.306%;
+}
+.fflag-PE {
+  background-position: center 15.528%;
+}
+.fflag-XC {
+  background-position: center 15.7496%;
+}
+.fflag-TT {
+  background-position: center 15.9694%;
+}
+.fflag-US {
+  background-position: center 16.1911%;
+}
+.fflag-UY {
+  background-position: left 16.4128%;
+}
+.fflag-VE {
+  background-position: center 16.6345%;
+}
+.fflag-AF {
+  background-position: center 16.8562%;
+}
+.fflag-AZ {
+  background-position: center 17.0779%;
+}
+.fflag-BD {
+  background-position: center 17.2996%;
+}
+.fflag-BT {
+  background-position: center 17.5213%;
+}
+.fflag-BN {
+  background-position: center 17.743%;
+}
+.fflag-KH {
+  background-position: center 17.968%;
+}
+.fflag-CN {
+  background-position: left 18.1864%;
+}
+.fflag-GE {
+  background-position: center 18.4081%;
+}
+.fflag-HK {
+  background-position: center 18.6298%;
+}
+.fflag-IN {
+  background-position: center 18.8515%;
+}
+.fflag-ID {
+  background-position: center 19.0732%;
+}
+.fflag-JP {
+  background-position: center 19.2987%;
+}
+.fflag-KZ {
+  background-position: center 19.518%;
+}
+.fflag-LA {
+  background-position: center 19.7383%;
+}
+.fflag-MO {
+  background-position: center 19.96%;
+}
+.fflag-MY {
+  background-position: center 20.1817%;
+}
+.fflag-MV {
+  background-position: center 20.4034%;
+}
+.fflag-MN {
+  background-position: left 20.6241%;
+}
+.fflag-MM {
+  background-position: center 20.8468%;
+}
+.fflag-NP {
+  background-position: left 21.0685%;
+}
+.fflag-KP {
+  background-position: left 21.2902%;
+}
+.fflag-PG {
+  background-position: center 21.5119%;
+}
+.fflag-PH {
+  background-position: left 21.7336%;
+}
+.fflag-SG {
+  background-position: left 21.9553%;
+}
+.fflag-KR {
+  background-position: center 22.177%;
+}
+.fflag-LK {
+  background-position: right 22.4002%;
+}
+.fflag-TW {
+  background-position: left 22.6204%;
+}
+.fflag-TJ {
+  background-position: center 22.8421%;
+}
+.fflag-TH {
+  background-position: center 23.0638%;
+}
+.fflag-TM {
+  background-position: center 23.2855%;
+}
+.fflag-VN {
+  background-position: center 23.5072%;
+}
+.fflag-AL {
+  background-position: center 23.732%;
+}
+.fflag-AM {
+  background-position: center 23.9506%;
+}
+.fflag-BY {
+  background-position: left 24.1723%;
+}
+.fflag-BA {
+  background-position: center 24.394%;
+}
+.fflag-BG {
+  background-position: center 24.6157%;
+}
+.fflag-HR {
+  background-position: center 24.8374%;
+}
+.fflag-CZ {
+  background-position: left 25.0591%;
+}
+.fflag-DK {
+  background-position: center 25.279%;
+}
+.fflag-EE {
+  background-position: center 25.5025%;
+}
+.fflag-GI {
+  background-position: center 25.7242%;
+}
+.fflag-HU {
+  background-position: center 25.9459%;
+}
+.fflag-IS {
+  background-position: center 26.1676%;
+}
+.fflag-IM {
+  background-position: center 26.3885%;
+}
+.fflag-JE {
+  background-position: center 26.611%;
+}
+.fflag-LV {
+  background-position: center 26.8327%;
+}
+.fflag-LT {
+  background-position: center 27.0544%;
+}
+.fflag-MD {
+  background-position: center 27.2761%;
+}
+.fflag-MK {
+  background-position: center 27.7195%;
+}
+.fflag-NO {
+  background-position: center 27.9412%;
+}
+.fflag-PL {
+  background-position: center 28.1615%;
+}
+.fflag-RO {
+  background-position: center 28.3846%;
+}
+.fflag-RU {
+  background-position: center 28.6063%;
+}
+.fflag-RS {
+  background-position: center 28.829%;
+}
+.fflag-SK {
+  background-position: center 29.0497%;
+}
+.fflag-SE {
+  background-position: center 29.2714%;
+}
+.fflag-CH {
+  background-position: center 29.4931%;
+}
+.fflag-TR {
+  background-position: center 29.7148%;
+}
+.fflag-UA {
+  background-position: center 29.9365%;
+}
+.fflag-GB {
+  background-position: center 30.1582%;
+}
+.fflag-IR {
+  background-position: center 30.3799%;
+}
+.fflag-IQ {
+  background-position: center 30.6016%;
+}
+.fflag-IL {
+  background-position: center 30.8233%;
+}
+.fflag-KW {
+  background-position: left 31.045%;
+}
+.fflag-JO {
+  background-position: left 31.2667%;
+}
+.fflag-KG {
+  background-position: center 31.4884%;
+}
+.fflag-LB {
+  background-position: center 31.7101%;
+}
+.fflag-OM {
+  background-position: left 31.9318%;
+}
+.fflag-PK {
+  background-position: center 32.1535%;
+}
+.fflag-QA {
+  background-position: center 32.3752%;
+}
+.fflag-SA {
+  background-position: center 32.5969%;
+}
+.fflag-SY {
+  background-position: center 32.8186%;
+}
+.fflag-AE {
+  background-position: center 33.0403%;
+}
+.fflag-UZ {
+  background-position: left 33.25975%;
+}
+.fflag-AU {
+  background-position: center 33.4837%;
+}
+.fflag-FJ {
+  background-position: center 33.7054%;
+}
+.fflag-NZ {
+  background-position: center 33.9271%;
+}
+.fflag-WS {
+  background-position: left 34.1488%;
+}
+.fflag-SB {
+  background-position: left 34.3705%;
+}
+.fflag-TO {
+  background-position: left 34.5922%;
+}
+.fflag-TV {
+  background-position: center 34.8139%;
+}
+.fflag-VU {
+  background-position: left 35.0356%;
+}
+.fflag-EU {
+  background-position: center 35.2555%;
+}
+.fflag-AN {
+  background-position: center 35.4772%;
+}
+.fflag-XPF {
+  background-position: center 35.6989%;
+}
+.fflag-XAF {
+  background-position: center 35.9206%;
+}
+.fflag-XAU {
+  background-position: center 36.1423%;
+}
+.fflag-GG {
+  background-position: center 36.364%;
+}
+.fflag-XD {
+  background-position: center 36.5857%;
+}
+.fflag-XAF {
+  background-position: center 36.8074%;
+}
+.fflag-XO {
+  background-position: center 37.0291%;
+}
+.fflag-SP {
+  background-position: center 37.2508%;
+}
+.fflag-XPT,
+.fflag-XPD,
+.fflag-XAG {
+  background-position: center 37.4725%;
+}
+.fflag-BH {
+  background-position: center 37.6942%;
+}
+.fflag-GN.ff-round,
+.fflag-GN.ff-app,
+.fflag-NG.ff-round,
+.fflag-NG.ff-app,
+.fflag-RO.ff-round,
+.fflag-RO.ff-app {
+  background-size: 100% 50000%;
+}
+
+.fflag.ff-sm {
+  width: 18px;
+  height: 11px;
+}
+.fflag.ff-md {
+  width: 27px;
+  height: 17px;
+}
+.fflag.ff-lg {
+  width: 42px;
+  height: 27px;
+}
+.fflag.ff-xl {
+  width: 60px;
+  height: 37px;
+}
+
+/* ff-round = circular icons */
+.ff-round {
+  background-size: 160%;
+  background-clip: content-box;
+  border-radius: 50%;
+}
+.ff-round.ff-sm {
+  width: 12px;
+  height: 12px;
+}
+.ff-round.ff-md {
+  width: 18px;
+  height: 18px;
+}
+.ff-round.ff-lg {
+  width: 24px;
+  height: 24px;
+}
+.ff-round.ff-xl {
+  width: 32px;
+  height: 32px;
+}
+
+/* ff-app = app icon look */
+.ff-app {
+  background-size: 155%;
+  background-clip: content-box;
+  border-radius: 21%;
+}
+.ff-app:before {
+  content: "";
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    circle at center -166%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 66%,
+    rgba(255, 255, 255, 0.5) 80%,
+    rgba(255, 255, 255, 0) 80.5%,
+    rgba(0, 0, 0, 0.02) 81%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+.ff-app.ff-sm:before,
+.ff-app.ff-sm {
+  width: 12px;
+  height: 12px;
+}
+.ff-app.ff-md:before,
+.ff-app.ff-md {
+  width: 18px;
+  height: 18px;
+}
+.ff-app.ff-lg:before,
+.ff-app.ff-lg {
+  width: 24px;
+  height: 24px;
+}
+.ff-app.ff-xl:before,
+.ff-app.ff-xl {
+  width: 32px;
+  height: 32px;
+}
