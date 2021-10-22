@@ -4,6 +4,7 @@ export const listContainer = ({ colors }: Theme) => css`
   debug: CurrenciesField__listContainer;
   background: ${colors.light};
   box-shadow: 0px 4px 10px rgba(${colors.rgbDark}, 0.1);
+  user-select: none;
 `;
 
 export const listBody = css`
@@ -13,18 +14,21 @@ export const listBody = css`
   overflow: auto;
 `;
 
-export const listItem = css`
+export const listItem = (disabled: boolean) => css`
   debug: CurrenciesField__listItem;
   position: relative;
   padding: 10px;
   border-bottom: 1px solid #dedee9;
-  cursor: pointer;
+  cursor: ${!disabled ? 'pointer' : 'no-drop'};
+  user-select: none;
+  display: flex;
+  align-items: center;
 `;
 
 export const listItemLabel = css`
   debug: CurrenciesField__listItemLabel;
-  margin-left: 5px;
-  line-height: 20px;
+  margin-left: 8px;
+  line-height: 16px;
 `;
 
 export const listItemActiveIcon = css`
@@ -43,18 +47,43 @@ export const listFooter = css`
   justify-content: space-between;
 `;
 
+export const message = css`
+  cursor: pointer;
+
+  :global {
+    .ant-message-notice-content {
+      background-color: #ffd38a;
+      border-radius: 6px;
+    }
+
+    .ant-message-custom-content {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+    }
+  }
+`;
+
 export const itemResultContainer = css`
   debug: CurrenciesField__itemResultContainer;
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
   border-bottom: 1px solid #dedee9;
+  user-select: none;
+`;
+
+export const itemResultLeft = css`
+  display: flex;
+  align-items: center;
+  flex: 1;
 `;
 
 export const itemResultDragIcon = css`
   debug: CurrenciesField__itemResultDragIcon;
-  margin-right: 15px;
+  transform: rotate(45deg);
 `;
 
 export const itemResultLabel = css`
@@ -64,9 +93,7 @@ export const itemResultLabel = css`
 
 export const itemResultTrashIcon = css`
   debug: CurrenciesField__itemResultTrashIcon;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
   cursor: pointer;
+  margin-left: 4px;
+  padding: 4px;
 `;

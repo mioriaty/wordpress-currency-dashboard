@@ -1,4 +1,28 @@
 export const toSettings = (settings: NguyenDttnSaveSettingsFormData['settings']): Settings => {
+  let locationDesktop: ('header' | 'other')[] = [];
+
+  if (settings.desktop.addToHeader) {
+    locationDesktop.push('header');
+  }
+  if (!settings.desktop.addToHeader && settings.desktop.placement) {
+    locationDesktop.push('other');
+  }
+  if (settings.desktop.addToHeader && settings.desktop.placement) {
+    locationDesktop = ['header', 'other'];
+  }
+
+  let locationMobile: ('header' | 'other')[] = [];
+
+  if (settings.mobile.addToHeader) {
+    locationMobile.push('header');
+  }
+  if (!settings.mobile.addToHeader && settings.mobile.placement) {
+    locationMobile.push('other');
+  }
+  if (settings.mobile.addToHeader && settings.mobile.placement) {
+    locationMobile = ['header', 'other'];
+  }
+
   return {
     desktop: {
       backgroundColor: settings.desktop.backgroundColor,
@@ -11,10 +35,12 @@ export const toSettings = (settings: NguyenDttnSaveSettingsFormData['settings'])
       variant: settings.desktop.variant,
       currenciesVariant: settings.desktop.currencies === 'all' ? 'all' : 'select',
       currencies: settings.desktop.currencies === 'all' ? [] : settings.desktop.currencies,
-      location: settings.desktop.addToHeader ? ['header'] : ['other'],
+      location: locationDesktop,
       font: 'Roboto',
       css: settings.desktop.css,
       autoDetectCurrency: settings.desktop.autoDetectCurrency,
+      headerSelector: '',
+      format: 'money',
     },
     mobile: {
       backgroundColor: settings.mobile.backgroundColor,
@@ -27,10 +53,12 @@ export const toSettings = (settings: NguyenDttnSaveSettingsFormData['settings'])
       variant: settings.mobile.variant,
       currenciesVariant: settings.mobile.currencies === 'all' ? 'all' : 'select',
       currencies: settings.mobile.currencies === 'all' ? [] : settings.mobile.currencies,
-      location: settings.mobile.addToHeader ? ['header'] : settings.mobile.placement ? ['other'] : [],
+      location: locationMobile,
       font: 'Roboto',
       css: settings.mobile.css,
       autoDetectCurrency: settings.mobile.autoDetectCurrency,
+      headerSelector: '',
+      format: 'money',
     },
   };
 };

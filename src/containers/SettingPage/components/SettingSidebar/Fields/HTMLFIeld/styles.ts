@@ -9,6 +9,6 @@ export const container = css`
 
 export const button = css`
   debug: HTMLField__button;
-  margin-top: 25px;
+  margin-top: 10px;
   font-weight: 500;
 `;

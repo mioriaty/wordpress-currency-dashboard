@@ -16,7 +16,9 @@ export const MainTemplate: FC<MainTemplateProps> = ({ Header, Sidebar, Content, 
         <View css={styles.header}>{Header()}</View>
         <View css={styles.mainContent}>
           {Sidebar && <View css={styles.sidebar}>{Sidebar()}</View>}
-          <View css={styles.content}>{Content()}</View>
+          <View backgroundColor="gray1" css={styles.content}>
+            {Content()}
+          </View>
         </View>
         {Modals?.()}
       </View>

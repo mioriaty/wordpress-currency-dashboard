@@ -28,7 +28,8 @@ function* handleLogin({ payload }: ReturnType<typeof actionValidateApp.request>)
       yield put(actionValidateApp.failure({ message: res.data.message }));
     }
   } catch (error) {
-    console.log(error);
+    const _err = error as Error;
+    yield put(actionValidateApp.failure({ message: _err.message }));
   }
 }
 

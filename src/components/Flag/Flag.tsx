@@ -12,7 +12,7 @@ export interface FlagProps {
 }
 
 const getFlagClasses = (currency: string, variant: FlagVariant, size: FlagSize) => {
-  const flag = `fflag-${/XP|XA|XP/g.test(currency) ? currency : currency.replace(/\w$/g, '')}`;
+  const flag = `fflag-${/XP|XA|XP|BT|ET/g.test(currency) ? currency : currency.replace(/\w$/g, '')}`;
   switch (variant) {
     case 'round':
       return `fflag ff-${size} ff-round ${flag}`;

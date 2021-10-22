@@ -38,7 +38,7 @@
 .fflag-ER {
   background-position: left 2.0047%;
 }
-.fflag-ET {
+.fflag-ETB {
   background-position: center 2.2247%;
 }
 .fflag-GA {
@@ -245,7 +245,7 @@
 .fflag-BD {
   background-position: center 17.2996%;
 }
-.fflag-BT {
+.fflag-BTN {
   background-position: center 17.5213%;
 }
 .fflag-BN {
@@ -519,6 +519,15 @@
 }
 .fflag-BH {
   background-position: center 37.6942%;
+}
+.fflag-BTC {
+  background-position: center 37.9159%;
+}
+.fflag-BC {
+  background-position: center 38.1376%;
+}
+.fflag-ETH {
+  background-position: center 38.3593%;
 }
 .fflag-GN.ff-round,
 .fflag-GN.ff-app,

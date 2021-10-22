@@ -3,7 +3,6 @@ import { InitializationPage } from 'containers/InitializationPage';
 import { pmAjax } from 'containers/InitializationPage/postmessage';
 import { initializationSelector, validationSelector } from 'containers/selectors';
 import { SettingPage } from 'containers/SettingPage/SettingPage';
-import { useTidioChat } from 'hooks/useTidioChat';
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -22,16 +21,8 @@ export const pages: Page[] = [
 ];
 
 export const Routes = () => {
-  const { confirmInitialized, tidioId } = useSelector(initializationSelector);
-  const { initTidioChat } = useTidioChat();
+  const { confirmInitialized } = useSelector(initializationSelector);
   const { hasPassed } = useSelector(validationSelector);
-
-  useEffect(() => {
-    if (tidioId) {
-      initTidioChat();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tidioId]);
 
   useEffect(() => {
     if (hasPassed) {

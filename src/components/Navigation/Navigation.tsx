@@ -58,14 +58,8 @@ const Navigation: FC<NavigationProps> = ({ data }) => {
   return (
     <View tagName="nav" className="Navigation-container" css={css.container}>
       {data.map(renderMenuItem)}
-      <Text
-        {...linkProps}
-        onClick={() => {
-          window.tidioChatApi.open();
-          window.tidioChatApi.messageFromVisitor('I want to request more features for Multi Currency Convert ');
-        }}
-      >
-        Request features to us
+      <Text {...linkProps} tagName="a" href="https://wiloke.com/support/" target="blank">
+        Support Forum
       </Text>
     </View>
   );

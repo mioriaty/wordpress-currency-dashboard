@@ -15,8 +15,8 @@ const axiosConfig = new ConfigureAxios({
       initialization: { token, baseUrl },
     } = store.getState() as Reducers;
     return {
-      token,
-      baseUrl,
+      token: token || '',
+      baseUrl: baseUrl || '',
     };
   },
 });

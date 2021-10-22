@@ -41,10 +41,12 @@ export const defaultSetting: Setting = {
   top: 10,
   left: 10,
   currencies: [],
-  currenciesVariant: 'all',
+  currenciesVariant: 'select',
   location: ['header'],
   css: '',
   autoDetectCurrency: false,
+  headerSelector: '',
+  format: 'money',
 };
 
 export const defaultState: State = {

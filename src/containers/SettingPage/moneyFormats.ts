@@ -64,6 +64,11 @@ const moneyFormats = {
     money_with_currency_format: '₼{{amount}} AZN',
     money_name: 'Azerbaijani Manat',
   },
+  BCH: {
+    money_format: '{{amount_no_decimals}} BCH',
+    money_with_currency_format: '{{amount_no_decimals}} BCH',
+    money_name: 'Bitcoin Cash',
+  },
   BDT: {
     money_format: 'Tk {{amount}}',
     money_with_currency_format: 'Tk {{amount}} BDT',
@@ -79,11 +84,21 @@ const moneyFormats = {
     money_with_currency_format: '{{amount}} BHD',
     money_name: 'Bahraini Dinar',
   },
+  BTC: {
+    money_format: '{{amount_no_decimals}} BTC',
+    money_with_currency_format: '{{amount_no_decimals}} BTC',
+    money_name: 'Bitcoin',
+  },
   BYN: {
     money_format: 'Br {{amount}}',
     money_with_currency_format: 'Br {{amount}} BYN',
     money_name: 'Belarusian Ruble',
   },
+  // BYR: {
+  //   money_format: 'Br {{amount}}',
+  //   money_with_currency_format: 'Br {{amount}} BYR',
+  //   money_name: 'Belarusian Ruble',
+  // },
   BZD: {
     money_format: 'BZ${{amount}}',
     money_with_currency_format: 'BZ${{amount}} BZD',
@@ -123,6 +138,11 @@ const moneyFormats = {
     money_format: '{{amount}} лв',
     money_with_currency_format: '{{amount}} лв BGN',
     money_name: 'Bulgarian Lev',
+  },
+  ETH: {
+    money_format: '{{amount_no_decimals}} ETH',
+    money_with_currency_format: '{{amount_no_decimals}} ETH',
+    money_name: 'Ethereum',
   },
   MMK: {
     money_format: 'K{{amount}}',

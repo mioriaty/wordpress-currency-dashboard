@@ -29,7 +29,7 @@ export const Preview = () => {
         id="IFRAME"
         style={{
           maxWidth: mobileWidth,
-          maxHeight: 379,
+          maxHeight: 500,
           width: '100%',
           height: '100%',
           border: `1px solid ${colors.gray3}`,

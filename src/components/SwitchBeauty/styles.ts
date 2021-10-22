@@ -10,7 +10,7 @@ const switchBeautySizeMapping: Record<Size, SwitchBeautySizeInfo> = {
   'extra-small': { height: 22, 'line-height': 20, padding: '0 7px' },
   small: { height: 30, 'line-height': 28, padding: '0 7px' },
   medium: { height: 38, 'line-height': 36, padding: '0 10px' },
-  large: { height: 46, 'line-height': 44, padding: '0 12px' },
+  large: { height: 48, 'line-height': 44, padding: '0 12px' },
 };
 
 export const container = (size: Size) => {

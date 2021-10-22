@@ -16,6 +16,7 @@ export const itemContainer = (isActive: boolean) => ({ colors }: Theme) => css`
   border-radius: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+  user-select: none;
 `;
 
 export const itemLeft = css`

@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { CurrenciesField as CurrenciesFieldComponent } from 'components/CurrenciesField/CurrenciesField';
 import { Field } from 'components/Field/Field';
 import Radio from 'components/WilRadio';
-import { settingSelector } from 'containers/selectors';
+import { settingSelector, validationSelector } from 'containers/selectors';
 import { useChangeSetting } from 'containers/SettingPage/actions/actionSetting';
 import { i18n } from 'translation';
 import { View } from 'wiloke-react-core';
@@ -14,11 +14,13 @@ export const CurrenciesField = () => {
   const { currencies, currenciesVariant } = setting;
   const isLoading = statusRequest === 'loading' || statusRequest === 'idle';
   const changeSetting = useChangeSetting();
+  const { isVerifications } = useSelector(validationSelector);
 
   const _renderSelectCurrencies = () => {
     if (currenciesVariant !== 'select') return null;
     return (
       <CurrenciesFieldComponent
+        isVerified={isVerifications}
         value={currencies.map(item => ({ label: item, value: item }))}
         onChange={value => changeSetting({ currencies: value.map(item => item.value) })}
       />
@@ -38,7 +40,9 @@ export const CurrenciesField = () => {
               else changeSetting({ currenciesVariant: 'select' });
             }}
           >
-            <Radio value="all">{i18n.t('settings.currencies_field.option1.label')}</Radio>
+            <Radio disabled={!isVerifications} value="all">
+              {i18n.t('settings.currencies_field.option1.label')}
+            </Radio>
             <Radio value="select">{i18n.t('settings.currencies_field.option2.label')}</Radio>
           </Radio.Group>
         </View>

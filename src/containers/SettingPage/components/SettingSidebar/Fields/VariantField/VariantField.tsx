@@ -20,10 +20,10 @@ export const VariantField = () => {
     style1: (
       <View radius={4} borderColor="gray3" borderStyle="solid" borderWidth={1} css={[styles.styleIcon, styles.style1]}>
         <Flag size="lg" variant="default" currency="USD" />
-        <Text tagName="span" color="primary" css={{ marginLeft: '4px', marginRight: '4px' }}>
+        <Text tagName="span" css={{ marginLeft: '4px', marginRight: '4px' }}>
           USD
         </Text>
-        <LineAwesome name="angle-down" color="primary" />
+        <LineAwesome name="angle-down" />
       </View>
     ),
     style2: (
@@ -39,25 +39,25 @@ export const VariantField = () => {
     style4: (
       <View borderColor="gray3" borderStyle="solid" borderWidth={1} css={[styles.styleIcon, styles.style1]}>
         <Flag size="lg" variant="default" currency="USD" />
-        <Text tagName="span" color="primary" css={{ marginLeft: '4px', marginRight: '4px' }}>
+        <Text tagName="span" css={{ marginLeft: '4px', marginRight: '4px' }}>
           USD
         </Text>
-        <LineAwesome name="angle-down" color="primary" />
+        <LineAwesome name="angle-down" />
       </View>
     ),
     style5: (
       <View borderColor="gray3" borderStyle="solid" borderWidth={1} css={[styles.styleIcon, styles.style3]}>
         <Flag size="lg" variant="default" currency="USD" />
-        <LineAwesome css={{ marginLeft: '4px' }} name="angle-down" color="primary" />
+        <LineAwesome css={{ marginLeft: '4px' }} name="angle-down" />
       </View>
     ),
     style6: (
       <View borderColor="gray3" borderStyle="solid" borderWidth={1} radius="pill" css={[styles.styleIcon, styles.style3]}>
         <Flag variant="round" currency="USD" />
-        <Text tagName="span" color="primary" css={{ marginLeft: '4px', marginRight: '4px' }}>
+        <Text tagName="span" css={{ marginLeft: '4px', marginRight: '4px' }}>
           USD
         </Text>
-        <LineAwesome name="angle-down" color="primary" />
+        <LineAwesome name="angle-down" />
       </View>
     ),
   };

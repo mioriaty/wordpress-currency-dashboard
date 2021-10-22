@@ -35,7 +35,7 @@ const FieldComponent: FC<FieldProps> = ({ label, children, color = 'gray8', font
     setVisibleNote(false);
   };
   return (
-    <View {...rest} ref={innerRef} css={[styles.container, rest.css]}>
+    <View {...rest} ref={innerRef} radius={10} css={[styles.container, rest.css]}>
       <View css={styles.inner}>
         {!!label && (
           <Text color={color} size={fontSize} tagName="label" css={styles.label}>

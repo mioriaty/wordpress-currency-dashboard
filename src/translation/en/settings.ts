@@ -18,16 +18,16 @@ export const settings = {
     label: 'Placement',
   },
   paddingLeft_field: {
-    label: 'Padding Left',
+    label: 'Left',
   },
   paddingRight_field: {
-    label: 'Padding Right',
+    label: 'Right',
   },
   paddingTop_field: {
-    label: 'Padding Top',
+    label: 'Top',
   },
   paddingBottom_field: {
-    label: 'Padding Bottom',
+    label: 'Bottom',
   },
   font_field: {
     label: 'Font',
@@ -54,5 +54,11 @@ export const settings = {
   autoDetectCurrency_field: {
     label: 'Auto Detect Currency',
     description: 'Auto-select currency based on Customer Location',
+  },
+  moneyFormat_field: {
+    label: 'Money format',
+  },
+  headerSelector_field: {
+    label: 'Header Selector',
   },
 };

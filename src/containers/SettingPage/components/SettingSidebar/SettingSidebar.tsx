@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { Route, Switch } from 'react-router';
 import { View } from 'wiloke-react-core';
 import { AdvancedField } from './Fields/AdvancedField/AdvancedField';
+import { HtmlSelectorField } from './Fields/AdvancedField/HtmlSelectorField';
+import { MoneyFormatField } from './Fields/AdvancedField/MoneyFormatField';
 import { AutoDetectCurrency } from './Fields/AutoDetectCurrency/AutoDetectCurrency';
 import { CurrenciesField } from './Fields/CurrenciesField/CurrenciesField';
 import { CustomCssField } from './Fields/CustomCssField/CustomCssField';
@@ -33,6 +35,8 @@ const AdvanceTab = () => {
       <View css={styles.body}>
         <HTMLField />
         <CustomCssField />
+        <MoneyFormatField />
+        <HtmlSelectorField />
       </View>
     </View>
   );

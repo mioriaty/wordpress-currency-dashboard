@@ -8,8 +8,8 @@ import * as css from './styles';
 
 export const themeOverrides: ThemeOverrides = {
   fonts: {
-    secondary: 'Roboto, sans-serif',
     primary: 'Poppins, sans-serif',
+    secondary: 'Roboto, sans-serif',
   },
   colors: {
     primary: '#2AB885',

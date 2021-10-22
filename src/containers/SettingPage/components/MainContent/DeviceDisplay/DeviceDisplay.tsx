@@ -1,30 +1,58 @@
-import { useSelector } from 'react-redux';
+import { Popover } from 'antd';
 import { Radio, RadioProps } from 'components/Radio/Radio';
 import { settingSelector } from 'containers/selectors';
 import { useChangeDeviceDisplay } from 'containers/SettingPage/actions/actionSetting';
-import { ActivityIndicator, LineAwesome, Text, View } from 'wiloke-react-core';
+import { useSelector } from 'react-redux';
+import { ActivityIndicator, LineAwesome, Text, useTheme, View } from 'wiloke-react-core';
 import * as styles from './styles';
 
 export const DeviceDisplay = () => {
   const changeDeviceDisplay = useChangeDeviceDisplay();
   const { device_display, statusRequest } = useSelector(settingSelector);
+  const { colors } = useTheme();
+
   const isLoading = statusRequest === 'loading' || statusRequest === 'idle';
 
   const _renderItem: RadioProps['renderItem'] = ({ isActive, value }) => {
+    const _value = value as DeviceDisplay;
+
     if (isLoading) {
       return (
-        <View css={styles.itemContainer}>
+        <View css={styles.itemContainer(false)}>
           <ActivityIndicator size={24} />
         </View>
       );
     }
-    return (
-      <View css={styles.itemContainer}>
-        <View css={styles.itemIcon(isActive)}>
-          <LineAwesome size={32} name={value as DeviceDisplay} />
+
+    if (_value === 'desktop') {
+      return (
+        <View css={styles.itemContainer(isActive)}>
+          <View css={styles.itemIcon(isActive)}>
+            <LineAwesome size={32} name={_value} />
+          </View>
+          <View>
+            <Text css={styles.itemDescription(isActive)}>{_value}</Text>
+          </View>
         </View>
-        <Text css={styles.itemDescription}>{value}</Text>
-      </View>
+      );
+    }
+
+    return (
+      <Popover
+        color={colors.gray8}
+        content={'This settings is for mobile device, you can set the settings on the sidebar'}
+        placement="bottomRight"
+        trigger="hover"
+      >
+        <View css={styles.itemContainer(isActive)}>
+          <View css={styles.itemIcon(isActive)}>
+            <LineAwesome size={32} name={_value} />
+          </View>
+          <View>
+            <Text css={styles.itemDescription(isActive)}>{_value}</Text>
+          </View>
+        </View>
+      </Popover>
     );
   };
 

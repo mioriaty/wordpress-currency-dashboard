@@ -9,6 +9,7 @@ export interface TextareaProps {
   value?: string;
   defaultValue?: string;
   resetButtonEnabled?: boolean;
+  placeholder?: string;
   onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
   onChangeText?: (value: string) => void;
   onReset?: () => void;
@@ -21,6 +22,7 @@ const Textarea: FC<TextareaProps> = ({
   onChangeText,
   onReset,
   disabled = false,
+  placeholder = '',
   resetButtonEnabled = false,
 }) => {
   const [valueState, setValueState] = useState('');
@@ -43,6 +45,7 @@ const Textarea: FC<TextareaProps> = ({
         onBlur={() => {
           setIsFocus(false);
         }}
+        placeholder={placeholder}
         onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
           if (isFocus) {
             onChange?.(event);

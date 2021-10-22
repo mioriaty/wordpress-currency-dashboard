@@ -35,7 +35,7 @@ export const LocationField = () => {
 
     if (isLoading) {
       return (
-        <View key={id} css={styles.itemContainer(isActive)}>
+        <View key={id} css={styles.itemContainer(false)}>
           <View css={styles.itemLeft}>
             <Checkbox.Loading />
           </View>
@@ -54,6 +54,7 @@ export const LocationField = () => {
         onClick={() => {
           changeSetting({
             location: !isActive ? location.concat(value) : location.filter(item => item !== value),
+            placement: value === 'other' ? 'top_left' : undefined,
           });
         }}
       >

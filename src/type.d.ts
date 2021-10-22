@@ -22,6 +22,17 @@ declare global {
     };
   }
 
+  interface WordpressInfo {
+    clientSite: string;
+    email: string;
+    endpointVerification: string;
+    purchaseCode: string;
+    purchaseCodeLink: string;
+    tidioId: string;
+    token: string;
+    url: string;
+  }
+
   interface Setting {
     location: ('header' | 'other')[];
     variant: 'style1' | 'style2' | 'style3' | 'style4' | 'style5' | 'style6';
@@ -46,6 +57,8 @@ declare global {
     currenciesVariant: 'all' | 'select';
     css: string;
     autoDetectCurrency: boolean;
+    format: 'money' | 'money_with_currency';
+    headerSelector: string;
   }
 
   type DeviceDisplay = 'desktop' | 'mobile';

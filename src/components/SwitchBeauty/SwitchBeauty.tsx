@@ -30,7 +30,7 @@ export const SwitchBeauty: FC<SwitchBeautyProps> = ({ checked, ...rest }) => {
   const { size = 'large', disabled = false } = rest;
 
   return (
-    <FieldBox css={[css.container(size), css.disabled(disabled)]} {...fieldBoxProps}>
+    <FieldBox borderColor="gray3" css={[css.container(size), css.disabled(disabled)]} {...fieldBoxProps}>
       <Switch {...switchProps} checked={checked} renderAfter={value => <TextStatus {...textStatusProps} enable={value} />} />
     </FieldBox>
   );

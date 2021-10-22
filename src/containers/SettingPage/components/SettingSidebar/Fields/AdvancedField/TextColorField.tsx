@@ -30,7 +30,13 @@ export const TextColorField = () => {
   return (
     <Field label={i18n.t('settings.textColor_field.label')}>
       <View css={styles.container}>
-        <ColorPickerBeautyDebounce borderColor="gray3" borderWidth={2} color={color} onChange={value => changeSetting({ color: value })} />
+        <ColorPickerBeautyDebounce
+          borderColor="gray3"
+          borderWidth={2}
+          radiusBox={10}
+          color={color}
+          onChange={value => changeSetting({ color: value })}
+        />
       </View>
     </Field>
   );

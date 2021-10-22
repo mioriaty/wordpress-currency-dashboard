@@ -11,9 +11,9 @@ export interface BoxProps extends ViewProps {
 export const FieldBox: FC<BoxProps> = ({
   borderColor = 'gray2',
   borderStyle = 'solid',
-  borderWidth = 1,
+  borderWidth = 2,
   backgroundColor = 'light',
-  radius = 5,
+  radius = 10,
   className,
   style,
   children,

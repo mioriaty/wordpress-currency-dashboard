@@ -31,6 +31,8 @@ export interface CurrencySettings {
   css: string;
   addToHeader: boolean;
   autoDetectCurrency: boolean;
+  format: 'money' | 'money_with_currency';
+  headerSelector: string;
 }
 
 export interface OnMessage {}

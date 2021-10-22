@@ -15,7 +15,7 @@ export const container = css`
 export const item = ({ isActive }: { isActive: boolean }) => ({ colors }: Theme) => css`
   debug: VariantField__item;
   /* padding: 20px 30px; */
-  border: 1px solid ${isActive ? colors.primary : colors.gray2};
+  border: 2px solid ${isActive ? colors.primary : colors.gray2};
   border-radius: 5px;
   display: flex;
   align-items: center;

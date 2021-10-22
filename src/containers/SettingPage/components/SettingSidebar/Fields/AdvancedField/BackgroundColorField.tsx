@@ -33,6 +33,7 @@ export const BackgroundColorField = () => {
         <ColorPickerBeautyDebounce
           borderColor="gray3"
           borderWidth={2}
+          radiusBox={10}
           color={backgroundColor}
           onChange={value => changeSetting({ backgroundColor: value })}
         />

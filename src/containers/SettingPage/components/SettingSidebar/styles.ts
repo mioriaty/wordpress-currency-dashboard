@@ -13,6 +13,7 @@ export const container = ({ colors }: Theme) => css`
 export const body = ({ colors }: Theme) => css`
   debug: SettingSidebar__body;
   padding: 20px;
+  padding-bottom: 60px;
   overflow-x: hidden;
   overflow-y: auto;
   flex: 1 1 auto;

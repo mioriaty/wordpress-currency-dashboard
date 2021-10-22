@@ -1,4 +1,4 @@
-import { css, Theme } from 'wiloke-react-core';
+import { Colors, css, Theme } from 'wiloke-react-core';
 
 export type Size = 'small' | 'medium' | 'large';
 
@@ -19,7 +19,7 @@ export const container = (size: Size, block: boolean, disabled: boolean) => css`
   height: ${inputSizeMapping[size]}px;
 `;
 
-export const input = (size: Size) => css`
+export const input = (size: Size) => (colors: Colors) => css`
   display: block;
   background-color: transparent;
   border: none;
@@ -30,6 +30,15 @@ export const input = (size: Size) => css`
 
   &:focus {
     outline: none;
+  }
+
+  &::placeholder {
+    color: ${colors.gray4};
+    opacity: 1; /* Firefox */
+  }
+
+  &::-webkit-input-placeholder {
+    color: ${colors.gray4};
   }
 `;
 

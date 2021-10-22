@@ -1,5 +1,5 @@
 import React, { ChangeEvent, FC, InputHTMLAttributes, useCallback } from 'react';
-import { Size, useStyleSheet, View, ViewProps } from 'wiloke-react-core';
+import { Size, useStyleSheet, useTheme, View, ViewProps } from 'wiloke-react-core';
 import { classNames } from 'wiloke-react-core/utils';
 import * as css from './styles';
 import TextInputLoading from './TextInputLoading';
@@ -47,7 +47,8 @@ const TextInput: FC<InputProps> & {
   onValueChange,
   ...rest
 }) => {
-  const { styles } = useStyleSheet();
+  const { colors } = useTheme();
+  const { styles } = useStyleSheet(colors);
 
   const _handleChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
     if (!disabled) {

@@ -22,9 +22,7 @@ export const confirmInitialized = createAction('@Initialzation/confirmInitialize
 export const useInitialization = createDispatchAsyncAction(initialization);
 export const useConfirmInitialized = createDispatchAction(confirmInitialized);
 
-export const getToken = createAction('@InitializationPage/getToken', (token: string, baseUrl: string, tidioId: string) => ({
-  token,
-  baseUrl,
-  tidioId,
+export const getToken = createAction('@InitializationPage/getToken', (payload: Partial<WordpressInfo>) => ({
+  ...payload,
 }));
-export const useGetToken = createDispatchAction(getToken);
+export const useGetWordpressInfo = createDispatchAction(getToken);

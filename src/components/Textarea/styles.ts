@@ -29,11 +29,21 @@ export const input = ({ colors }: Theme) => css`
   padding: 10px 15px;
   color: ${colors.gray7};
   line-height: 1.6;
+
   &[disabled] {
     border-color: ${colors.gray2};
     background-color: ${colors.gray1};
     color: ${colors.gray5};
     cursor: not-allowed;
+  }
+
+  &::placeholder {
+    color: ${colors.gray5};
+    opacity: 1; /* Firefox */
+  }
+
+  &::-webkit-input-placeholder {
+    color: ${colors.gray5};
   }
 `;
 

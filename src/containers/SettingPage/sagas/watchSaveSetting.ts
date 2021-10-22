@@ -1,10 +1,10 @@
 import { notification } from 'antd';
-import { put, retry, select, takeLatest } from 'redux-saga/effects';
 import { settingSelector } from 'containers/selectors';
+import { put, retry, select, takeLatest } from 'redux-saga/effects';
 import { fetchAPI } from 'utils/functions/fetchAPI';
 import { toPMSettings } from 'utils/toPMSettings';
 import { getActionType } from 'wiloke-react-core/utils';
-import { changeModalSaveCompleteVisible, saveSetting } from '../actions/actionSetting';
+import { saveSetting } from '../actions/actionSetting';
 
 function* handleSaveSetting(_: ReturnType<typeof saveSetting.request>) {
   try {
@@ -16,7 +16,10 @@ function* handleSaveSetting(_: ReturnType<typeof saveSetting.request>) {
         settings: toPMSettings(settings),
       } as NguyenDttnSaveSettingsFormData,
     });
-    yield put(changeModalSaveCompleteVisible(true));
+    notification.success({
+      message: 'Your setting has been saved',
+    });
+    // yield put(changeModalSaveCompleteVisible(true));
     yield put(saveSetting.success(undefined));
   } catch (err) {
     const _err = err as Error;

@@ -8,9 +8,14 @@ interface State {
   email?: string;
   themeId?: number;
   confirmInitialized: boolean;
-  token: string;
-  baseUrl: string;
-  tidioId: string;
+  token?: string;
+  baseUrl?: string;
+  tidioId?: string;
+  clientSite?: string;
+  endpointVerification?: string;
+  purchaseCode?: string;
+  purchaseCodeLink?: string;
+  message?: string;
 }
 
 type Actions = ActionTypes<typeof initialization | typeof confirmInitialized | typeof getToken>;
@@ -19,12 +24,17 @@ const defaultState: State = {
   statusInitialization: 'idle',
   app: undefined,
   shopDomain: undefined,
-  email: undefined,
+  email: '',
   themeId: undefined,
   confirmInitialized: false,
   token: '',
   baseUrl: '',
   tidioId: '',
+  clientSite: '',
+  endpointVerification: '',
+  purchaseCode: '',
+  purchaseCodeLink: '',
+  message: '',
 };
 
 export const reducerInitialization = createReducer<State, Actions>(defaultState, [
@@ -59,12 +69,17 @@ export const reducerInitialization = createReducer<State, Actions>(defaultState,
     };
   }),
   handleAction('@InitializationPage/getToken', ({ state, action }) => {
-    const { token, baseUrl, tidioId } = action.payload;
+    const { clientSite, email, endpointVerification, purchaseCode, purchaseCodeLink, tidioId, token, url } = action.payload;
     return {
       ...state,
       token,
-      baseUrl,
+      baseUrl: url,
       tidioId,
+      clientSite,
+      email,
+      endpointVerification,
+      purchaseCode,
+      purchaseCodeLink,
     };
   }),
 ]);

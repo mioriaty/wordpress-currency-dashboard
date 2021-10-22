@@ -18,8 +18,8 @@ export class ConfigureAxios {
     this.axiosInstance = axios.create(configure);
     this.axiosInstance.interceptors.request.use(async config => {
       const { token, baseUrl } = setInitializationApp();
-      config.headers.Authorization = `Basic ${token}`;
       config.baseURL = baseUrl;
+      config.headers.Authorization = `Basic ${token}`;
       return config;
     });
   }
