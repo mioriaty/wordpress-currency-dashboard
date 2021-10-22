@@ -16,6 +16,14 @@ export const settings = {
   },
   placement_field: {
     label: 'Placement',
+    option1: { label: 'Top Left' },
+    option2: { label: 'Top Left Bar' },
+    option3: { label: 'Top Right' },
+    option4: { label: 'Top Right Bar' },
+    option5: { label: 'Bottom Left' },
+    option6: { label: 'Bottom Left Bar' },
+    option7: { label: 'Bottom Right' },
+    option8: { label: 'Bottom Right Bar' },
   },
   paddingLeft_field: {
     label: 'Left',
@@ -55,10 +63,10 @@ export const settings = {
     label: 'Auto Detect Currency',
     description: 'Auto-select currency based on Customer Location',
   },
-  moneyFormat_field: {
-    label: 'Money format',
-  },
-  headerSelector_field: {
-    label: 'Header Selector',
+  size_field: {
+    label: 'Size',
+    option1: { label: 'Small' },
+    option2: { label: 'Medium' },
+    option3: { label: 'Large' },
   },
 };

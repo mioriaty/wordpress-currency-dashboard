@@ -47,6 +47,7 @@ export const defaultSetting: Setting = {
   autoDetectCurrency: false,
   headerSelector: '',
   format: 'money',
+  size: 'md',
 };
 
 export const defaultState: State = {

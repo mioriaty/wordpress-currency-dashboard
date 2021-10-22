@@ -88,7 +88,7 @@ export const itemResultDragIcon = css`
 
 export const itemResultLabel = css`
   debug: CurrenciesField__itemResultLabel;
-  margin-left: 5px;
+  margin-left: 8px;
 `;
 
 export const itemResultTrashIcon = css`

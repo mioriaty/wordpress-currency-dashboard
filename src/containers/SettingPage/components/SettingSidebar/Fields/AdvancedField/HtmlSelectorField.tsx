@@ -4,7 +4,6 @@ import Textarea, { TextareaProps } from 'components/Textarea';
 import { settingSelector } from 'containers/selectors';
 import { useChangeSetting } from 'containers/SettingPage/actions/actionSetting';
 import { useSelector } from 'react-redux';
-import { i18n } from 'translation';
 import { LineAwesome, View } from 'wiloke-react-core';
 import * as styles from './styles';
 
@@ -23,7 +22,7 @@ export const HtmlSelectorField = () => {
     <Field
       label={
         <Tooltip color="#26256C" style={{ borderRadius: '6px' }} title="Use when you know exactly where the html selector you need to place">
-          {i18n.t('settings.headerSelector_field.label')} <LineAwesome color="tertiary" name="question-circle-o" />
+          Header selector <LineAwesome color="tertiary" name="question-circle-o" />
         </Tooltip>
       }
     >

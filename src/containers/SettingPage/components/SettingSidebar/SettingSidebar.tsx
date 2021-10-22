@@ -10,6 +10,7 @@ import { CustomCssField } from './Fields/CustomCssField/CustomCssField';
 import { HTMLField } from './Fields/HTMLFIeld/HTMLField';
 import { LocationField } from './Fields/LocationField/LocationFIeld';
 import { PlacementField } from './Fields/PlacementField/PlacementField';
+import { SizeField } from './Fields/SizeField/SizeField';
 import { VariantField } from './Fields/VariantField/VariantField';
 import * as styles from './styles';
 
@@ -21,8 +22,8 @@ const SettingTab = () => {
         <PlacementField />
         <AdvancedField />
         <AutoDetectCurrency />
-
         <VariantField />
+        <SizeField />
         <CurrenciesField />
       </View>
     </View>

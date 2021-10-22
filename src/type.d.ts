@@ -59,6 +59,7 @@ declare global {
     autoDetectCurrency: boolean;
     format: 'money' | 'money_with_currency';
     headerSelector: string;
+    size: 'sm' | 'md' | 'lg';
   }
 
   type DeviceDisplay = 'desktop' | 'mobile';

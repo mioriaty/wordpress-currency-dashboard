@@ -3,7 +3,6 @@ import { Field } from 'components/Field/Field';
 import { settingSelector } from 'containers/selectors';
 import { useChangeSetting } from 'containers/SettingPage/actions/actionSetting';
 import { useSelector } from 'react-redux';
-import { i18n } from 'translation';
 import { View } from 'wiloke-react-core';
 import * as styles from './styles';
 
@@ -19,7 +18,7 @@ const MoneyFormatField = () => {
   };
 
   return (
-    <Field label={i18n.t('settings.moneyFormat_field.label')}>
+    <Field label="Money format">
       <View css={styles.container}>
         <SelectAntd
           data={[

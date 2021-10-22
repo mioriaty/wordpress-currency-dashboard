@@ -41,6 +41,7 @@ export const toSettings = (settings: NguyenDttnSaveSettingsFormData['settings'])
       autoDetectCurrency: settings.desktop.autoDetectCurrency,
       headerSelector: '',
       format: 'money',
+      size: settings.desktop.size,
     },
     mobile: {
       backgroundColor: settings.mobile.backgroundColor,
@@ -59,6 +60,7 @@ export const toSettings = (settings: NguyenDttnSaveSettingsFormData['settings'])
       autoDetectCurrency: settings.mobile.autoDetectCurrency,
       headerSelector: '',
       format: 'money',
+      size: settings.mobile.size,
     },
   };
 };
