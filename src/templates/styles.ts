@@ -56,8 +56,8 @@ export const mainContent = css`
 
 export const sidebar = css`
   debug: MainTemplate__sidebar;
-  width: 450px;
-  flex-basis: 450px;
+  width: 400px;
+  flex-basis: 400px;
   flex-shrink: 0;
 `;
 

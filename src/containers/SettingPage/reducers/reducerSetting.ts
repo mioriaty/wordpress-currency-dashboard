@@ -6,14 +6,12 @@ import {
   changeModalSaveCompleteVisible,
   changeSetting,
   getDefaultSetting,
-  getMenuWordpress,
   saveSetting,
 } from '../actions/actionSetting';
 
 interface State {
   statusRequest: Status;
   statusSave: Status;
-  statusMenuWP: Status;
   isDraft: boolean;
   isNew: boolean;
   settings: Settings;
@@ -21,7 +19,6 @@ interface State {
   modalSaveCompleteVisible: boolean;
   modalRatingVisible: boolean;
   device_display: 'mobile' | 'desktop';
-  menuWordpress: NguyenDttnGetMenuWPResponse['data'];
 }
 
 type Actions = ActionTypes<
@@ -31,7 +28,6 @@ type Actions = ActionTypes<
   | typeof changeDeviceDisplay
   | typeof changeModalSaveCompleteVisible
   | typeof changeModalRatingVisible
-  | typeof getMenuWordpress
 >;
 
 export const defaultSetting: Setting = {
@@ -52,13 +48,11 @@ export const defaultSetting: Setting = {
   headerSelector: '',
   format: 'money',
   size: 'md',
-  menuPlacement: [],
 };
 
 export const defaultState: State = {
   statusRequest: 'idle',
   statusSave: 'idle',
-  statusMenuWP: 'idle',
   isDraft: false,
   isNew: true,
   settings: {
@@ -72,7 +66,6 @@ export const defaultState: State = {
   modalSaveCompleteVisible: false,
   modalRatingVisible: false,
   device_display: 'desktop',
-  menuWordpress: [],
 };
 
 export const reducerSetting = createReducer<State, Actions>(defaultState, [
@@ -139,18 +132,5 @@ export const reducerSetting = createReducer<State, Actions>(defaultState, [
       ...state,
       modalRatingVisible: action.payload,
     };
-  }),
-  handleAction('@Setting/getMenuWordpressRequest', ({ state }) => {
-    return { ...state, statusMenuWP: 'loading' };
-  }),
-  handleAction('@Setting/getMenuWordpressSuccess', ({ state, action }) => {
-    return {
-      ...state,
-      statusMenuWP: 'success',
-      menuWordpress: action.payload.data,
-    };
-  }),
-  handleAction('@Setting/getMenuWordpressFailure', ({ state }) => {
-    return { ...state, statusMenuWP: 'failure' };
   }),
 ]);

@@ -60,7 +60,6 @@ declare global {
     format: 'money' | 'money_with_currency';
     headerSelector: string;
     size: 'sm' | 'md' | 'lg';
-    menuPlacement: string[];
   }
 
   type DeviceDisplay = 'desktop' | 'mobile';

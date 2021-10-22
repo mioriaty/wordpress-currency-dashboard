@@ -4,7 +4,7 @@ export const container = ({ colors }: Theme) => css`
   debug: SizeField__container;
   display: flex;
   flex-wrap: nowrap;
-  border: 1px solid ${colors.gray2};
+  border: 2px solid ${colors.gray3};
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -14,12 +14,14 @@ export const container = ({ colors }: Theme) => css`
   }
 `;
 
-export const item = ({ isActive }: { isActive: boolean }) => ({ colors }: Theme) => css`
+export const item = ({ isActive }: { isActive: boolean }) => ({ colors, fonts }: Theme) => css`
   debug: SizeField__item;
   padding: 14px;
   text-align: center;
   background-color: ${isActive ? colors.primary : colors.light};
   color: ${isActive ? colors.light : undefined};
+  font-family: ${fonts.primary};
+
   &:first-child {
     border-right: 1px solid ${colors.gray2};
   }

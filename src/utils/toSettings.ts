@@ -39,10 +39,9 @@ export const toSettings = (settings: NguyenDttnSaveSettingsFormData['settings'])
       font: 'Roboto',
       css: settings.desktop.css,
       autoDetectCurrency: settings.desktop.autoDetectCurrency,
-      headerSelector: '',
+      headerSelector: settings.desktop.headerSelector,
       format: 'money',
       size: settings.desktop.size,
-      menuPlacement: settings.desktop.menuPlacement,
     },
     mobile: {
       backgroundColor: settings.mobile.backgroundColor,
@@ -59,10 +58,9 @@ export const toSettings = (settings: NguyenDttnSaveSettingsFormData['settings'])
       font: 'Roboto',
       css: settings.mobile.css,
       autoDetectCurrency: settings.mobile.autoDetectCurrency,
-      headerSelector: '',
+      headerSelector: settings.mobile.headerSelector,
       format: 'money',
       size: settings.mobile.size,
-      menuPlacement: settings.mobile.menuPlacement,
     },
   };
 };

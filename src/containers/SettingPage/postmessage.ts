@@ -33,7 +33,6 @@ export interface CurrencySettings {
   autoDetectCurrency: boolean;
   format: 'money' | 'money_with_currency';
   headerSelector: string;
-  menuPlacement: string[];
 }
 
 export interface OnMessage {}

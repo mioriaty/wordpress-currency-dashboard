@@ -38,12 +38,7 @@ export const DeviceDisplay = () => {
     }
 
     return (
-      <Popover
-        color={colors.gray8}
-        content={'This settings is for mobile device, you can set the settings on the sidebar'}
-        placement="bottomRight"
-        trigger="hover"
-      >
+      <Popover color={colors.gray8} content={'For mobile device you can set the settings on the sidebar'} placement="bottomRight" trigger="hover">
         <View css={styles.itemContainer(isActive)}>
           <View css={styles.itemIcon(isActive)}>
             <LineAwesome size={32} name={_value} />

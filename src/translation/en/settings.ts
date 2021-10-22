@@ -54,7 +54,7 @@ export const settings = {
   },
   html_field: {
     label: 'Currency Code',
-    description: 'Copy the following code and paste to place that you want display the Multi Currency Converter Toolbar manually',
+    description: 'Copy the following code and paste to place that you want display the Multi Currency Converter Toolbar',
   },
   customCss_field: {
     label: 'Custom Css',
