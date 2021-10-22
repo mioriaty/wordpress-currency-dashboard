@@ -31,6 +31,7 @@ declare global {
     tidioId: string;
     token: string;
     url: string;
+    productName: string;
   }
 
   interface Setting {

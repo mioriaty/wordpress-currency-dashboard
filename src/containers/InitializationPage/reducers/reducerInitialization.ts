@@ -16,6 +16,7 @@ interface State {
   purchaseCode?: string;
   purchaseCodeLink?: string;
   message?: string;
+  productName?: string;
 }
 
 type Actions = ActionTypes<typeof initialization | typeof confirmInitialized | typeof getToken>;
@@ -35,6 +36,7 @@ const defaultState: State = {
   purchaseCode: '',
   purchaseCodeLink: '',
   message: '',
+  productName: '',
 };
 
 export const reducerInitialization = createReducer<State, Actions>(defaultState, [
@@ -69,7 +71,7 @@ export const reducerInitialization = createReducer<State, Actions>(defaultState,
     };
   }),
   handleAction('@InitializationPage/getToken', ({ state, action }) => {
-    const { clientSite, email, endpointVerification, purchaseCode, purchaseCodeLink, tidioId, token, url } = action.payload;
+    const { clientSite, email, endpointVerification, purchaseCode, purchaseCodeLink, tidioId, token, url, productName } = action.payload;
     return {
       ...state,
       token,
@@ -80,6 +82,7 @@ export const reducerInitialization = createReducer<State, Actions>(defaultState,
       endpointVerification,
       purchaseCode,
       purchaseCodeLink,
+      productName,
     };
   }),
 ]);

@@ -14,7 +14,7 @@ export const HtmlSelectorField = () => {
   const { settings, device_display } = useSelector(settingSelector);
   const { headerSelector } = settings[device_display];
   const [visible, setVisible] = useState(false);
-  const defaultText = 'header [href$="/cart"], header [href$="/cart/"], header .mini-cart';
+  const defaultText = 'header [href*="/cart"], header [data-href*="/cart"], header .mini-cart, [class*="header"] [href*="/cart"';
 
   const _handleChange: TextareaProps['onChange'] = event => {
     changeSetting({

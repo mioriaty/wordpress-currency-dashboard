@@ -16,7 +16,7 @@ export const actionVerifyPurchaseCode = createAsyncAction([
   '@Auth/verifyPurchaseCodeSuccess',
   '@Auth/verifyPurchaseCodeFailure',
 ])<
-  { clientSite: string; purchaseCode: string; email: string },
+  { clientSite: string; purchaseCode: string; email: string; productName?: string },
   { isVerifications: boolean; statusResponse: string; messageResponse: string },
   { message: string }
 >();

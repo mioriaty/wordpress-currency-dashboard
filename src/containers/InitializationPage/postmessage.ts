@@ -10,6 +10,7 @@ interface AjaxOnPostMessage {
     tidioId: string;
     token: string;
     url: string;
+    productName: string;
   };
 }
 

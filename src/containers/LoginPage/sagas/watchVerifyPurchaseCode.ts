@@ -15,7 +15,7 @@ interface LoginPageSuccess {
 
 function* handleLogin({ payload }: ReturnType<typeof actionVerifyPurchaseCode.request>) {
   try {
-    const { clientSite, email, purchaseCode } = payload;
+    const { clientSite, email, purchaseCode, productName } = payload;
     const res: AxiosResponse<LoginPageSuccess> = yield retry(3, 1000, fetchAPI.request, {
       url: 'https://multicurrency.myshopkit.app/vge/ev/v1/verifications',
       method: 'post',
@@ -23,6 +23,7 @@ function* handleLogin({ payload }: ReturnType<typeof actionVerifyPurchaseCode.re
         clientSite,
         purchaseCode,
         email,
+        productName,
       },
     });
     if (res.data.status === 'success') {

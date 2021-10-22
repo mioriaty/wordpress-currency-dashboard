@@ -11,7 +11,7 @@ import { usePopupPurchaseCode, useVerifyPurchaseCode } from '.';
 import * as css from './styles';
 
 const VerificationPopup = () => {
-  const { clientSite, email, purchaseCodeLink } = useSelector(initializationSelector);
+  const { clientSite, email, purchaseCodeLink, productName } = useSelector(initializationSelector);
   const { popupPurchaseCode, verificationStatus, message } = useSelector(validationSelector);
   const verification = useVerifyPurchaseCode();
   const setShow = usePopupPurchaseCode();
@@ -21,8 +21,7 @@ const VerificationPopup = () => {
     const { purchaseCode }: { purchaseCode: string } = values;
 
     if (purchaseCode && email && clientSite) {
-      console.log(clientSite, email, purchaseCode);
-      verification.request({ email, clientSite, purchaseCode });
+      verification.request({ email, clientSite, purchaseCode, productName });
     }
   };
 

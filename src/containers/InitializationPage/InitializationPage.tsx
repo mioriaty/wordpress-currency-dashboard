@@ -16,8 +16,8 @@ export const InitializationPage = () => {
 
   useEffect(() => {
     pmToken.current = pmAjax.on('@InitializePage/getWPInfoRequest', payload => {
-      const { tidioId, token, url, email, clientSite, endpointVerification, purchaseCode, purchaseCodeLink } = payload;
-      getWPInfo({ token, url, tidioId, email, clientSite, endpointVerification, purchaseCode, purchaseCodeLink });
+      const { tidioId, token, url, email, clientSite, endpointVerification, purchaseCode, purchaseCodeLink, productName } = payload;
+      getWPInfo({ token, url, tidioId, email, clientSite, endpointVerification, purchaseCode, purchaseCodeLink, productName });
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
