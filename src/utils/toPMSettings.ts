@@ -18,6 +18,7 @@ export const toPMSettings = (settings: Settings): EmitMessage['@currencySettings
       css: settings.desktop.css,
       format: settings.desktop.format,
       headerSelector: settings.desktop.headerSelector,
+      menuPlacement: settings.desktop.menuPlacement,
     },
     mobile: {
       currencies: settings.mobile.currenciesVariant === 'all' ? 'all' : settings.mobile.currencies,
@@ -35,6 +36,7 @@ export const toPMSettings = (settings: Settings): EmitMessage['@currencySettings
       css: settings.mobile.css,
       format: settings.mobile.format,
       headerSelector: settings.mobile.headerSelector,
+      menuPlacement: settings.mobile.menuPlacement,
     },
   };
 };

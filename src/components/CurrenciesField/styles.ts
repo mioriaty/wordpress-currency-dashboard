@@ -49,17 +49,21 @@ export const listFooter = css`
 
 export const message = css`
   cursor: pointer;
+  padding: 15px 10px;
 
   :global {
     .ant-message-notice-content {
-      background-color: #ffd38a;
-      border-radius: 6px;
+      background-color: #09009b !important;
+      border-radius: 6px !important;
+      padding: 0 !important;
+      color: #efefef;
+      font-size: 16px !important;
     }
 
     .ant-message-custom-content {
-      display: flex;
-      align-items: center;
-      font-weight: 500;
+      display: flex !important;
+      align-items: center !important;
+      font-weight: 500 !important;
     }
   }
 `;

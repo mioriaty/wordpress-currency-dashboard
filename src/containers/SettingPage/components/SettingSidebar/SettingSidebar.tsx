@@ -9,6 +9,7 @@ import { CurrenciesField } from './Fields/CurrenciesField/CurrenciesField';
 import { CustomCssField } from './Fields/CustomCssField/CustomCssField';
 import { HTMLField } from './Fields/HTMLFIeld/HTMLField';
 import { LocationField } from './Fields/LocationField/LocationFIeld';
+import { MenuField } from './Fields/MenuField/MenuField';
 import { PlacementField } from './Fields/PlacementField/PlacementField';
 import { SizeField } from './Fields/SizeField/SizeField';
 import { VariantField } from './Fields/VariantField/VariantField';
@@ -19,6 +20,7 @@ const SettingTab = () => {
     <View css={styles.container}>
       <View css={styles.body}>
         <LocationField />
+        <MenuField />
         <PlacementField />
         <AdvancedField />
         <AutoDetectCurrency />

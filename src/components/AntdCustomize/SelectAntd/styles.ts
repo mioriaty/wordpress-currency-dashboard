@@ -40,9 +40,9 @@ export const container = (colors: Theme['colors']) => css`
     padding: 0 !important;
   }
   .ant-select-selection-placeholder {
-    padding: 0 5px !important;
+    /* padding: 0 5px !important;
     position: initial !important;
-    transform: initial !important;
+    transform: initial !important; */
     color: ${colors.gray6};
   }
   .ant-select-selector span {

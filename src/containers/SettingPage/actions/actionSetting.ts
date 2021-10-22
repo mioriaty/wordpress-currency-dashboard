@@ -24,3 +24,10 @@ export const useChangeSetting = createDispatchAction(changeSetting);
 export const useChangeDeviceDisplay = createDispatchAction(changeDeviceDisplay);
 export const useChangeModalSaveCompleteVisible = createDispatchAction(changeModalSaveCompleteVisible);
 export const useChangeModalRatingVisible = createDispatchAction(changeModalRatingVisible);
+
+export const getMenuWordpress = createAsyncAction([
+  '@Setting/getMenuWordpressRequest',
+  '@Setting/getMenuWordpressSuccess',
+  '@Setting/getMenuWordpressFailure',
+])<undefined, { data: NguyenDttnGetMenuWPResponse['data'] }, undefined>();
+export const useGetMenuWordpress = createDispatchAsyncAction(getMenuWordpress);

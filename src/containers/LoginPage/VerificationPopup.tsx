@@ -47,11 +47,8 @@ const VerificationPopup = () => {
           </FormItem>
 
           {!!message && (
-            <View row>
-              <View columns={[12, 4, 4]} />
-              <View columns={[12, 8, 8]} css={{ paddingLeft: '5px', marginBottom: '5px' }} color="tertiary">
-                {parse(message)}
-              </View>
+            <View css={{ marginBottom: '5px' }} color="tertiary">
+              {parse(message)}
             </View>
           )}
 

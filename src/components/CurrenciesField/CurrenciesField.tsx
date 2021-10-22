@@ -55,7 +55,7 @@ export const CurrenciesField: FC<CurrenciesFieldProps> = ({ onChange, value = []
               visibleModal(true);
             }}
           >
-            Please unlock Premium features to select more
+            Please <span style={{ color: '#FFC947' }}>Upgrade To Premium</span> to select more
           </div>
         ),
         duration: 10,

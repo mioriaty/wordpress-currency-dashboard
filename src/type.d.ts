@@ -60,6 +60,7 @@ declare global {
     format: 'money' | 'money_with_currency';
     headerSelector: string;
     size: 'sm' | 'md' | 'lg';
+    menuPlacement: string[];
   }
 
   type DeviceDisplay = 'desktop' | 'mobile';
@@ -72,6 +73,12 @@ declare global {
       status: 'activate' | 'deactivate';
       settings?: Record<DeviceDisplay, CurrencySettings>;
     };
+  }
+
+  interface NguyenDttnGetMenuWPResponse {
+    message: string;
+    status: 'success' | 'error';
+    data: Array<{ label: string; value: string }>;
   }
 
   interface NguyenDttnSaveSettingsFormData {

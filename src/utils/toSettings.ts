@@ -42,6 +42,7 @@ export const toSettings = (settings: NguyenDttnSaveSettingsFormData['settings'])
       headerSelector: '',
       format: 'money',
       size: settings.desktop.size,
+      menuPlacement: settings.desktop.menuPlacement,
     },
     mobile: {
       backgroundColor: settings.mobile.backgroundColor,
@@ -61,6 +62,7 @@ export const toSettings = (settings: NguyenDttnSaveSettingsFormData['settings'])
       headerSelector: '',
       format: 'money',
       size: settings.mobile.size,
+      menuPlacement: settings.mobile.menuPlacement,
     },
   };
 };
