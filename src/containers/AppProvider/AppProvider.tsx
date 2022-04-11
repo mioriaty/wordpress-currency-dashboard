@@ -73,6 +73,7 @@ export const CSSGlobal: FC = ({ children }) => {
 const AppProvider: FC = ({ children }) => {
   return (
     <Provider store={store}>
+      {/* @ts-ignore */}
       <PersistGate loading={<div />} persistor={persistor}>
         <ThemeProvider themeOverrides={themeOverrides}>
           <CSSGlobal>{children}</CSSGlobal>

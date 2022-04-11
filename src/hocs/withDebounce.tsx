@@ -29,7 +29,7 @@ const withDebounce = <P extends any>(WrappedComponent: ComponentType<P>, propVal
     const handleChange = (value: any) => {
       setValueState(value);
     };
-
+    // @ts-ignore
     return <WrappedComponent {...props} {...{ [propOnChange]: handleChange, [propValue]: valueState }} />;
   };
   return WithDebounce;

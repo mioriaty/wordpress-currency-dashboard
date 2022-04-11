@@ -93,6 +93,7 @@ export const Slider: FC<SliderProps> & {
         tipProps={{ placement: tooltipPlacement, visible: tooltipVisible }}
       />
     ) : (
+      // @ts-ignore
       <RSlider
         {...combineProps}
         {...generalProps}

@@ -38,6 +38,7 @@ export const VirtualList: FC<VirtualListProps> = ({
     <View className={containerClassName} style={containerStyle} css={[styles.container, containerCSS]}>
       <AutoSizer>
         {({ width, height }) => {
+          // @ts-ignore
           return <List onScroll={onScroll} width={width} height={height} rowHeight={rowHeight} rowRenderer={_rowRenderer} rowCount={rowCount} />;
         }}
       </AutoSizer>

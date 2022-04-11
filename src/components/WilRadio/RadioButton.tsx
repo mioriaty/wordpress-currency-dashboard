@@ -9,8 +9,11 @@ const RadioButton: FC<RadioButtonProps> = props => {
   const { ...rest } = props;
 
   if (stateContext) {
+    // eslint-disable-next-line react/destructuring-assignment
     rest.checked = String(props.value) === stateContext.value;
+    // eslint-disable-next-line react/destructuring-assignment
     rest.disabled = props.disabled || (stateContext.disabled as boolean);
+    // eslint-disable-next-line react/destructuring-assignment
     rest.block = props.block || (stateContext.block as boolean);
   }
   return <Radio {...rest} variant="button" />;

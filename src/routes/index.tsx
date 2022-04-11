@@ -35,13 +35,18 @@ export const Routes = () => {
     return (
       <>
         <Switch>
-          {pages.map(({ component, path, exact }) => {
-            return <Route key={path} component={component} exact={exact} path={path} />;
+          {pages.map(({ component: Component, path, exact }) => {
+            return (
+              <Route key={path} exact={exact} path={path}>
+                {/* @ts-ignore */}
+                <Component />
+              </Route>
+            );
           })}
         </Switch>
       </>
     );
   };
-
+  // @ts-ignore
   return <BrowserRouter>{_renderRoute()}</BrowserRouter>;
 };

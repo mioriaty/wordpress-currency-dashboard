@@ -149,6 +149,7 @@ export const ColorPicker: FC<ColorPickerProps> & {
   };
 
   const targetPicker = (
+    // @ts-ignore
     <Reference>
       {({ ref }) => (
         <View ref={ref} className="TargetPicker" css={css.targetPicker} onClick={_handleOnClick}>
@@ -166,6 +167,7 @@ export const ColorPicker: FC<ColorPickerProps> & {
   );
 
   const pickerBoard = (
+    // @ts-ignore
     <Popper strategy={strategy} placement={placement}>
       {popperProps => {
         return (
@@ -189,6 +191,7 @@ export const ColorPicker: FC<ColorPickerProps> & {
           {onlyShowColorBoard ? (
             mappingColorPicker[pickerType]
           ) : (
+            // @ts-ignore
             <Manager>
               {targetPicker}
               {isPortal ? _renderPickerPortal() : _renderColorPicker()}
